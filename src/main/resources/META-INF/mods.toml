@@ -54,10 +54,19 @@ versionRange = "${forge_version_range}" #mandatory
 ordering = "NONE"
 # Side this dependency is applied on - BOTH, CLIENT, or SERVER
 side = "BOTH"# Here's another dependency
+
 [[dependencies."${mod_id}"]]
 modId = "minecraft"
 mandatory = true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# Don't forget to add SuperbWarfare as a mandatory dependency mod
+[[dependencies."${mod_id}"]]
+modId = "superbwarfare"
+mandatory = true
+versionRange = "[0.8.0,)"
 ordering = "NONE"
 side = "BOTH"
